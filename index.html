@@ -9,27 +9,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Asistencia</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Registro de Asistencia Docente</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
         <h1>Registro de Asistencia Docente</h1>
         <p>Presiona el botón para registrar tu asistencia.</p>
-        
+
+        <!-- Video y cámara -->
         <div class="video-container">
-            <video id="video" autoplay></video>
-            <img src="https://png.pngtree.com/png-clipart/20220530/original/pngtree-camara-icon-design-png-image_7770222.png" alt="Capturar" class="icon">
+            <video id="video" autoplay playsinline></video>
+            <img id="camera-icon" src="https://png.pngtree.com/png-clipart/20220530/original/pngtree-camara-icon-design-png-image_7770222.png" alt="Cámara">
         </div>
 
+        <!-- Botón de captura -->
         <button id="capture">Capturar Asistencia</button>
-        <p id="mensaje"></p>
-    </div>
-    
-    <div id="photo-container"></div>
 
-    
+        <!-- Mensaje de error -->
+        <p id="mensaje"></p>
+
+        <!-- Contenedor de la foto capturada -->
+        <div id="photo-container"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
